@@ -22,7 +22,9 @@
         <div class="sendinvoice-inner-container">
             <div class="row-container-sendinvoice">
                 <div class="col-md-6 d-flex">Factuur versturen</div>
-                <div class="col-md-6 xmark-icon-attachment"><i class="fa-solid fa-xmark cross-icon"></i></div>
+                <div class="col-md-6 xmark-icon-attachment">
+                    <img src="images/close.png" class="cross-icon" alt="cross-arrow" />
+                </div>
             </div>
             <div class="sendinvoice-form">
                 <div class="col-md-6">
@@ -57,26 +59,28 @@
                                 <option value="Layout4">Layout 4</option>
                             </select>
                         </div>
-                        <div>
-                            <label for="Gereed">PDf-bestanden samenvoegen</label>
-                            <input type="checkbox" id="Gereed" name="Gereed" class="checkbox-deadline">
+                        
+                        <div class="d-flex pb-0">
+                            <div for="bestanden" class="boek-sendinvoice">PDf-bestanden samenvoegen</div>
+                            <input type="checkbox" id="bestanden" name="bestanden" class="checkbox-boek-sendinvoice">
                         </div>
-                       
+
+                            <div class="d-flex pb-0">
+                                <div for="Gereed" class="boek-sendinvoice">Boek in exact</div>
+                                <input type="checkbox" id="Gereed" name="Gereed" class="checkbox-boek-sendinvoice">
+                            </div>
 
                     </div>
-                    <div>
-                        <label for="Gereed" class="boek-sendinvoice">Boek in exact</label>
-                        <input type="checkbox" id="Gereed" name="Gereed" class="checkbox-boek-sendinvoice">
-                    </div>
+
                 </div>
                 <div class="col-md-6">
                     <div class="sendinvoice-table-right">
                         <div>Email tekst</div>
-                       <textarea></textarea>
+                        <textarea></textarea>
                     </div>
                     <div class="sendinvoice-table-right">
                         <div>Vrije tekst factuur</div>
-                       <textarea></textarea>
+                        <textarea></textarea>
                     </div>
                 </div>
             </div>

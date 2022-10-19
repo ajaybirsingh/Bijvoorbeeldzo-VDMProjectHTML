@@ -49,10 +49,8 @@
     color: #000;
 }
 
-.sidebar-links:active,
-.sidebar-links:visited,
-.sidebar-links:hover {
-    color: #009FE3
+.active {
+    color: #009FE3;
 }
 
 .option-section svg {
@@ -109,12 +107,10 @@
     display: block;
     float: left;
     height: 100%;
-    /* background-color: #fff; */
 }
 
 .table-header-section {
     background-color: #C0B09F;
-    /* padding: 20px; */
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     width: 100%;
@@ -243,6 +239,14 @@
 }
 
 
+
+
+
+
+
+
+
+
 /* project details */
 
 .project-details-arrow {
@@ -264,11 +268,14 @@
     font-weight: 700;
     font-size: 20px;
     background-color: #C0B09F;
-    padding: 16px 30px;
+    padding: 0px 30px;
     color: white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 70px;
+    justify-content: left;
+    display: flex;
+    align-items: center;
 }
 
 .details-upper-container {
@@ -284,7 +291,16 @@
     background-color: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    height: 310px;
+    height: auto;
+}
+
+.table-details-container-two {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 320px;
 }
 
 .details-inner-section {
@@ -340,10 +356,8 @@
 }
 
 .plus-icon {
-    font-size: 25px;
-    position: absolute;
-    margin-left: 10px;
-    margin-top: -3px;
+    font-size: 30px;
+    padding-left: 15px;
 }
 
 .bottom-table-details {
@@ -369,6 +383,10 @@
     font-weight: 300;
 }
 
+.table-data-bottom tbody tr td a {
+    text-decoration: none;
+}
+
 .table-data-bottom tbody tr td span {
     background: #009FE3;
     border-radius: 12px;
@@ -386,14 +404,41 @@
     font-weight: 400 !important;
 }
 
+.project-details-plus-link {
+    color: #fff;
+}
+
+.project-details-plus-link:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
 
 
 /* sales invoice */
+.sales-main-container {
+    display: block;
+    float: left;
+    background-color: #E5E5E5;
+    width: 100%;
+    position: relative;
+}
+
+.icon-sales-xmark {
+    font-size: 45px;
+    position: absolute;
+    right: 30px;
+}
 
 .outer-container-sales {
     display: flex;
     justify-content: center;
-    background-color: #E5E5E5;
     padding: 40px 0px;
 }
 
@@ -560,6 +605,13 @@
 
 
 
+
+
+
+
+
+
+
 /* Attachment */
 
 .attachment-container {
@@ -581,7 +633,9 @@
     display: flex;
     height: 55px;
     border-bottom: 2px solid #e2dddd;
-    padding: 14px 35px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 35px;
 }
 
 .row-container div {
@@ -596,11 +650,11 @@
 }
 
 .plus-icon-attach {
-    font-size: 35px;
+    font-size: 42px;
     position: absolute;
     font-weight: 400;
-    top: -16px;
-    left: 14px;
+    top: -22px;
+    left: 9px;
 }
 
 .xmark-icon-attachment {
@@ -619,7 +673,8 @@
     display: flex;
     height: 55px;
     border-bottom: 2px solid #e2dddd;
-    padding: 14px 35px;
+    padding: 0px 35px;
+    align-items: center;
 }
 
 .row-container-second div {
@@ -629,10 +684,10 @@
 
 .row-container-third {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: 75px;
     border-bottom: 2px solid #e2dddd;
-    padding: 14px 35px;
+    padding: 0px 35px;
     align-items: center;
 }
 
@@ -657,8 +712,13 @@
 
 
 
-/* send invoice */
 
+
+
+
+
+
+/* send invoice */
 
 .sendinvoice-outer-container {
     display: flex;
@@ -671,7 +731,7 @@
 
 .sendinvoice-inner-container {
     width: 1146px;
-    height: 478px;
+    height: auto;
     background: #FFFFFF;
     border-radius: 15px;
     margin: 0 auto;
@@ -679,10 +739,10 @@
 
 .row-container-sendinvoice {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: 55px;
     border-bottom: 2px solid #e2dddd;
-    padding: 14px 35px;
+    padding: 0px 35px;
     align-items: center;
 }
 
@@ -692,10 +752,9 @@
 }
 
 .cross-icon {
-    top: -12px;
-    position: absolute;
-    font-size: 30px;
-    right: 0px;
+
+    width: 22px;
+    height: 22px
 }
 
 .sendinvoice-form {
@@ -706,7 +765,9 @@
 .sendinvoice-table div {
     padding-bottom: 15px;
 }
-.sendinvoice-table div label,.sendinvoice-table-right div label {
+
+.sendinvoice-table div label,
+.sendinvoice-table-right div label {
     width: 138px;
     font-size: 14px;
     font-weight: 400;
@@ -718,32 +779,53 @@
     height: 40px;
     border: 1px solid #969696;
     border-radius: 10px;
+    padding: 0px 13px;
+    font-size: 12px;
+    font-weight: 400;
 }
-.sendinvoice-table-right div textarea{
-    width: 320px;
-    border: 1px solid #969696;
-    border-radius: 10px;
+
+.sendinvoice-table div select {
+    font-size: 12px;
+    font-weight: 400;
 }
-.boek-sendinvoice{
-    width: 138px;
+
+.boek-sendinvoice {
+    width: 142px;
     font-size: 14px;
     font-weight: 400;
 }
-.checkbox-boek-sendinvoice{
-    width: 25px;
-    height:25px;
+
+.checkbox-boek-sendinvoice {
+    width: 25px !important;
+    height: 25px !important;
     border: 1px solid #969696;
     border-radius: 10px;
 }
-.sendinvoice-table-right{
+
+.sendinvoice-table-right {
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 20px;
 }
-.sendinvoice-table-right textarea{
-    width: 320px;
-    height: 120px;
+
+.sendinvoice-table-right textarea {
+    width: 350px;
+    height: 140px;
     border-radius: 10px;
+    border: 1px solid #969696;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 13px;
 }
+
+.sendinvoice-table-right div {
+    width: 80px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
 
 
 
@@ -761,7 +843,7 @@
 
 .deadline-inner-container {
     width: 579px;
-    height: 543px;
+    height: auto;
     background: #FFFFFF;
     border-radius: 15px;
     margin: 0 auto;
@@ -769,11 +851,11 @@
 
 .row-container-deadline {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: 55px;
     border-bottom: 2px solid #e2dddd;
-    padding: 14px 35px;
     align-items: center;
+    padding: 0px 35px;
 }
 
 .row-container-deadline div {
@@ -781,7 +863,10 @@
 }
 
 .deadline-table {
-    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
 }
 
 .deadline-table div {
@@ -791,7 +876,7 @@
 .deadline-table div label {
     width: 138px;
     font-size: 14px;
-    font-weight:400;
+    font-weight: 400;
 }
 
 .deadline-table div input,
@@ -800,8 +885,83 @@
     height: 40px;
     border: 1px solid #969696;
     border-radius: 10px;
+    padding: 0px 13px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .checkbox-deadline {
     width: 25px !important;
+}
+
+.deadline-table div select {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+/* responsive */
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+    .sidebar-section {
+        height: 100%;
+    }
+
+    .logo-section img {
+        width: 110px;
+    }
+
+    .option-section {
+        margin-bottom: 15px;
+    }
+
+    .heading-options {
+        font-size: 18px;
+    }
+
+    .search-section-project-data {
+        flex-direction: column;
+    }
+
+    .search-section-project-data h1 {
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .input-search {
+        width: 100% !important;
+    }
+
+    .main-section-table-part {
+        overflow:auto;
+    }
+    .table-main-section{
+        width: 1000px;
+    }
+
+    .attachment-container {
+        padding: 20px;
+    }
+
+    .deadline-outer-container {
+        padding: 20px;
+    }
+
+    .deadline-table {
+        padding: 30px 25px;
+    }
+
+    .deadline-table div {
+        padding-bottom: 10px;
+    }
+
+    .deadline-table div label {
+        width: 90px;
+    }
+
+    .deadline-table div input,
+    .deadline-table div select {
+        width: 310px;
+        height: 32px;
+    }
 }
