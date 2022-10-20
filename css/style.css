@@ -938,7 +938,17 @@
     .table-main-section{
         width: 1000px;
     }
-
+    .table-container thead tr th{
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+    .table-container tbody tr td{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .table-left-data{
+        padding-left: 0px !important;
+    }
     .attachment-container {
         padding: 20px;
     }
@@ -963,5 +973,18 @@
     .deadline-table div select {
         width: 310px;
         height: 32px;
+    }
+
+    /* sales invoice page */
+    .inner-container-sales {
+        width: 100%;
+    }
+    .heading-sales{
+        font-size: 40px;
+    }
+    .outer-container-sales{
+        width: 100%;
+        display: block;
+        float: left;
     }
 }
