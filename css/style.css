@@ -49,6 +49,10 @@
     color: #000;
 }
 
+.sidebar-options a:hover { 
+    color: #009FE3 !important;
+}
+
 .active {
     color: #009FE3;
 }
@@ -943,11 +947,13 @@
     .table-container thead tr th {
         padding-top: 0px;
         padding-bottom: 5px;
+        font-size: 16px;
     }
 
     .table-container tbody tr td {
         padding-top: 5px;
         padding-bottom: 5px;
+        font-size: 16px;
     }
 
     .table-left-data {
@@ -995,6 +1001,7 @@
     }
 
     .outer-container-sales {
+
         width: 100%;
         display: block;
         float: left;
@@ -1224,5 +1231,156 @@
     .table-details-container{
         width: 100%;
         float: left;
+    }
+
+    .data-heading-section {
+        font-size: 16px;
+    }
+
+    .heading-section {
+        font-size: 16px;
+    }
+
+    .project-page-data {
+        height: 100%;
+    }
+
+    /* invoice page */
+    /* .header-sales-invoice{
+        flex-direction: column;
+    } */
+    .inner-container-sales {
+        padding: 0px 10px;
+    }
+
+    .heading-image {
+        height: auto;
+        width: 140px;
+    }
+
+    .sales-third-section {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .naar-sales {
+        padding-right: 0px;
+    }
+
+    .sales-second-section {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .van-sales {
+        padding-right: 0px;
+    }
+
+    .sales-fourth-section {
+        overflow: auto;
+
+    }
+
+    .table {
+        width: 750px !important;
+    }
+
+    .sales-sixth-section {
+        overflow: auto;
+    }
+
+    .sales-eighth-section {
+        flex-direction: column;
+    }
+
+    .line-separator-sales {
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width:990px) {
+    .sidebar-section {
+        height: 100%;
+    }
+
+    .logo-section img {
+        width: 174px;
+    }
+
+    .sidebar-options {
+        display: flex;
+        margin-top: 25px;
+    }
+
+    .option-section {
+        margin-left: 20px;
+    }
+
+    .heading-options {
+        font-size: 22px;
+    }
+
+    .search-section-project-data {
+        flex-direction: column;
+    }
+
+    .search-section-project-data h1 {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .input-search {
+        width: 100% !important;
+    }
+
+    .main-section-table-part {
+        overflow: auto;
+    }
+
+    .table-main-section {
+        width: 1000px;
+    }
+
+    .change-in-tab {
+        max-width: 100% !important;
+    }
+
+    .project-page-data {
+        height: 100%;
+    }
+
+    .inner-container-sales {
+        padding: 0px 25px;
+    }
+}
+
+@media only screen and (min-width:991px) and (max-width:1024px) {
+    .logo-section img {
+        width: 120px;
+    }
+
+    .pr-0-mob-tab {
+        padding-right: 0 !important;
+    }
+
+    .sidebar-options {
+        padding: 10px 10px;
+    }
+
+    .accordion-header-project .accordion-header .accordion-button::after {
+        left: 8px !important;
+    }
+
+    .table-left-data {
+        padding-left: 30px !important;
+    }
+
+    .table-container thead tr th {
+        padding: 10px 0px;
+    }
+
+    .table-container tbody tr td {
+        padding: 10px 14px;
     }
 }
