@@ -969,7 +969,7 @@
     }
 
     .deadline-table {
-        padding: 30px 25px;
+        padding: 10px 10px;
     }
 
     .deadline-table div {
@@ -977,13 +977,18 @@
     }
 
     .deadline-table div label {
-        width: 90px;
+        width: 100%;
     }
 
     .deadline-table div input,
     .deadline-table div select {
-        width: 310px;
+        width: 100%;
         height: 32px;
+    }
+
+    .row-container-deadline {
+        padding: 0px 15px;
+        height: 45px;
     }
 
     /* sales invoice page */
@@ -996,8 +1001,235 @@
     }
 
     .outer-container-sales {
+
         width: 100%;
         display: block;
+        float: left;
+    }
+
+    .sendinvoice-outer-container {
+        height: 100vh;
+        padding: 0px 15px;
+    }
+
+    .sendinvoice-inner-container {
+        width: 100%;
+    }
+
+    .row-container-sendinvoice {
+        padding: 0px 15px;
+    }
+
+    .sendinvoice-table div {
+        padding-bottom: 5px;
+    }
+
+    .sendinvoice-form {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    .sendinvoice-table div input,
+    .sendinvoice-table div select {
+        width: 100%;
+        height: 32px;
+    }
+
+    .sendinvoice-table-right {
+        display: block;
+        padding-bottom: 5px;
+        width: 100%;
+        float: left;
+    }
+
+    .sendinvoice-table-right textarea {
+        width: 100%;
+        height: 90px;
+    }
+
+    .checkbox-boek-sendinvoice {
+        width: 22px !important;
+    }
+
+
+    /* project details */
+    .project-details-container {
+        width: 100%;
+        height: 100%;
+        display: block;
+        float: left;
+    }
+
+    .details-upper-container {
+        display: block;
+        float: left;
+        padding: 25px 10px;
+        width: 100%;
+    }
+
+    .details-inner-section {
+        padding: 0px;
+
+    }
+
+    .set-wdth-mob {
+        width: 1120px;
+    }
+
+    .add-ovflw-auto {
+        overflow: auto;
+    }
+
+    .table-data-left tbody tr td {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .table-data-left tbody tr th {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .table-details-container {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    .table-details-rightside tbody tr th,
+    .table-details-rightside tbody tr td {
+        padding-bottom: 4px;
+    }
+
+    .table-data-left {
+        margin-bottom: 0px !important;
+    }
+
+    .informatie-details {
+        padding: 0px 15px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .plus-icon {
+        font-size: 20px;
+    }
+
+    .table-details-container {
+        margin-bottom: 20px;
+    }
+
+    .bottom-table-details {
+        overflow-x: scroll;
+    }
+
+    .table-data-bottom tbody tr td {
+        font-size: 14px;
+    }
+
+    .table-data-child {
+        width: auto;
+    }
+
+    .inner-sect-detail-main {
+        overflow: auto;
+    }
+
+    .table-inner-detail {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+    .sendinvoice-outer-container {
+        padding: 0px 25px;
+    }
+
+    .sendinvoice-inner-container {
+        width: 100%;
+    }
+
+    .sendinvoice-table div input,
+    .sendinvoice-table div select {
+        width: 100%;
+    }
+
+    .sendinvoice-table-right textarea {
+        width: 100%;
+    }
+
+    .sendinvoice-table-right {
+        display: block;
+        width: 100%;
+        float: left;
+        padding: 0px 25px;
+    }
+
+    .sendinvoice-form {
+        padding: 20px 0px;
+    }
+
+    .sendinvoice-table {
+        padding: 0px 25px
+    }
+
+    .project-details-container {
+        height: 100%;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    .details-upper-container {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    .inner-sect-detail-main {
+        width: 100% !important;
+    }
+
+    .details-inner-section {
+        width: 100% !important;
+    }
+
+    .table-details-container {
+        margin-bottom: 3rem;
+
+    }
+
+    .table-data-child {
+        width: auto;
+    }
+
+    .bottom-table-details {
+        overflow: auto;
+    }
+
+    .bottom-table-details div {
+        width: 1370px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .details-upper-container {
+        padding: 25px 5px;
+    }
+    .add-ovflw-auto{
+        overflow: auto;
+        width: 100%;
+        display: block;
+    }
+    .set-wdth-mob{
+        width: 1250px !important;
+    }
+    .table-data-child{
+        width: auto;
+    }
+    .table-details-container{
+        width: 100%;
         float: left;
     }
 
